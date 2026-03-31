@@ -15,44 +15,44 @@
 
 ---
 
-## 📋 **Table of Contents**
-1. [✨ Key Features](#-key-features)
-2. [💻 Tech Stack](#-tech-stack)
-3. [🚀 Getting Started](#-getting-started)
-4. [📤 Telegram Sync & Automation](#-telegram-sync--automation)
-5. [📊 Advanced Excel Reports](#-advanced-excel-reports)
-6. [🛠️ HTTP Repeater (Pro Toolbox)](#-http-repeater-pro-toolbox)
-7. [📁 Project Structure](#-project-structure)
-8. [🖼️ Visual Tour](#-visual-tour)
-9. [📜 License](#-license)
+## 📋 **Table of Contents** <a id="toc"></a>
+1. [✨ Key Features](#features)
+2. [💻 Tech Stack](#tech-stack)
+3. [🚀 Getting Started](#getting-started)
+4. [📤 Telegram Sync & Automation](#telegram-sync)
+5. [📊 Advanced Excel Reports](#excel-reports)
+6. [🛠️ HTTP Repeater (Pro Toolbox)](#http-repeater)
+7. [📁 Project Structure](#project-structure)
+8. [🖼️ Visual Tour](#visual-tour)
+9. [📜 License](#license)
 
 ---
 
-## ✨ **Key Features**
+## ✨ **Key Features** <a id="features"></a>
 - **📅 Smart Task Management**: Automatic daily task distribution based on grouping algorithms to ensure account coverage.
 - **🔗 Burp Suite Simulator**: Integrated Repeater tool for manually editing and resending HTTP requests for fast analysis.
 - **🌐 Intelligent Proxy System**: Full support for HTTP/SOCKS5 proxies with automatic validity detection.
 - **🚀 Premium UI**: Modern design supporting multiple themes and both Arabic and English with full responsiveness.
 
 <div align="center">
-  <a href="#-table-of-contents">🔝 Back to Top</a>
+  <a href="#toc">🔝 Back to Top</a>
 </div>
 
 ---
 
-## 💻 **Tech Stack**
+## 💻 **Tech Stack** <a id="tech-stack"></a>
 - **Tauri 2.0**: For building the desktop application core using Rust.
 - **React & TypeScript**: To develop the modern and interactive user interface.
 - **Rust Engine**: For heavy task processing and high-performance database management.
 - **pnpm Workspaces**: For efficiently managing the Monorepo package structure.
 
 <div align="center">
-  <a href="#-table-of-contents">🔝 Back to Top</a>
+  <a href="#toc">🔝 Back to Top</a>
 </div>
 
 ---
 
-## 🚀 **Getting Started**
+## 🚀 **Getting Started** <a id="getting-started"></a>
 
 ### Prerequisites
 - [x] **Node.js (v18+)**
@@ -77,45 +77,45 @@
    ```
 
 <div align="center">
-  <a href="#-table-of-contents">🔝 Back to Top</a>
+  <a href="#toc">🔝 Back to Top</a>
 </div>
 
 ---
 
-## 📤 **Telegram Sync & Automation**
+## 📤 **Telegram Sync & Automation** <a id="telegram-sync"></a>
 - **Cloud Backup**: Upload and download your entire database with a single click.
 - **Completion Reports**: Automatically send generated Excel reports to designated Telegram groups.
 - **Notifications**: Receive instant alerts for task completions or proxy connection issues.
 
 <div align="center">
-  <a href="#-table-of-contents">🔝 Back to Top</a>
+  <a href="#toc">🔝 Back to Top</a>
 </div>
 
 ---
 
-## 📊 **Advanced Excel Reports**
+## 📊 **Advanced Excel Reports** <a id="excel-reports"></a>
 - **Workflow Automation**: Seamless integration with Telegram to automatically send report files to groups immediately after daily tasks.
 - **Tracking Efficiency**: "Clean Data" reports designed for direct sharing with teams to ensure precise and rapid progress monitoring.
 - **Mass Account Management**: Comprehensive summaries for all active accounts with a single click, minimizing the need for manual oversight.
 
 <div align="center">
-  <a href="#-table-of-contents">🔝 Back to Top</a>
+  <a href="#toc">🔝 Back to Top</a>
 </div>
 
 ---
 
-## 🛠️ **HTTP Repeater (Pro Toolbox)**
+## 🛠️ **HTTP Repeater (Pro Toolbox)** <a id="http-repeater"></a>
 - **Full Control**: Precisely edit headers and payloads with professional ease.
 - **Protocol Support**: Fully compatible with both HTTP/1.1 and HTTP/2.
 - **Proxy Aware**: All requests sent through the Repeater automatically respect global proxy settings.
 
 <div align="center">
-  <a href="#-table-of-contents">🔝 Back to Top</a>
+  <a href="#toc">🔝 Back to Top</a>
 </div>
 
 ---
 
-## 📁 **Project Structure**
+## 📁 **Project Structure** <a id="project-structure"></a>
  ```bash
  game-request-generator/
  ├── apps/
@@ -130,26 +130,26 @@
  ```
 
 <div align="center">
-  <a href="#-table-of-contents">🔝 Back to Top</a>
+  <a href="#toc">🔝 Back to Top</a>
 </div>
 
 ---
 
-## 🖼️ **Visual Tour**
+## 🖼️ **Visual Tour** <a id="visual-tour"></a>
 ![Dashboard Preview](https://via.placeholder.com/800x450?text=Dashboard+Preview)
 _Actual application screenshots will replace this placeholder soon._
 
 <div align="center">
-  <a href="#-table-of-contents">🔝 Back to Top</a>
+  <a href="#toc">🔝 Back to Top</a>
 </div>
 
 ---
 
-## 📜 **License**
+## 📜 **License** <a id="license"></a>
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 <div align="center">
-  <a href="#-table-of-contents">🔝 Back to Top</a>
+  <a href="#toc">🔝 Back to Top</a>
 </div>
 
 <p align="center"> Developed with ❤️ by <a href="https://github.com/Ahmad-J-Bary">@Ahmad Abdelbary</a> </p>
