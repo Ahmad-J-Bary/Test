@@ -1,162 +1,156 @@
-<div align="center">
-  <img src="https://img.shields.io/badge/Language-English-blue?style=for-the-badge" alt="English">
-  <a href="#"><img src="https://img.shields.io/badge/🇺🇸_English-Locales/README.en.md-blue?style=flat-square" alt="English Version"></a>
-  <img src="https://img.shields.io/badge/Language-Arabic-green?style=for-the-badge" alt="Arabic">
-  <a href="../README.md"><img src="https://img.shields.io/badge/🇸🇦_العربية-Root-green?style=flat-square" alt="Arabic Version"></a>
-</div>
+# 🕹️ **مولد طلبات الألعاب (Game Request Generator)**
+> _تطبيق مكتبي متكامل لإدارة وتتبع تقدم الألعاب، أتمتة طلبات الشبكة، وإدارة المهام اليومية باحترافية وسريعة. مبني باستخدام Tauri و React و Rust._
 
 <div align="center">
-  <h1 style="font-size: 3rem; margin-bottom: 10px; color: #1a73e8; border-bottom: 4px solid #34a853; padding-bottom: 15px; display: inline-block;">
-    🕹️ Game Request Generator
-  </h1>
-  <p style="font-size: 1.3rem; max-width: 900px; margin: 25px auto; padding: 20px; background: linear-gradient(135deg, #f8f9fa, #e8f0fe); border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-    <em>A comprehensive desktop application for game progression tracking, network request simulation, and professional daily task management.</em>
-  </p>
-</div>
-
-<div style="background: linear-gradient(135deg, #f1f3f4, #ffffff); padding: 30px; border-radius: 20px; margin: 40px 0; border: 1px solid #e0e0e0; box-shadow: 0 8px 32px rgba(0,0,0,0.08);">
-  <h2 id="table-of-contents" style="text-align: center; color: #1a73e8; margin-top: 0; font-size: 1.8rem;">📋 Table of Contents</h2>
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 25px;">
-    <a href="#key-features" style="padding: 15px; background: white; border-radius: 12px; text-align: center; box-shadow: 0 3px 6px rgba(0,0,0,0.05); text-decoration: none; color: #3c4043; font-weight: bold; transition: transform 0.2s;">✨ Key Features</a>
-    <a href="#tech-stack" style="padding: 15px; background: white; border-radius: 12px; text-align: center; box-shadow: 0 3px 6px rgba(0,0,0,0.05); text-decoration: none; color: #3c4043; font-weight: bold; transition: transform 0.2s;">💻 Tech Stack</a>
-    <a href="#getting-started" style="padding: 15px; background: white; border-radius: 12px; text-align: center; box-shadow: 0 3px 6px rgba(0,0,0,0.05); text-decoration: none; color: #3c4043; font-weight: bold; transition: transform 0.2s;">🚀 Getting Started</a>
-    <a href="#telegram-sync" style="padding: 15px; background: white; border-radius: 12px; text-align: center; box-shadow: 0 3px 6px rgba(0,0,0,0.05); text-decoration: none; color: #3c4043; font-weight: bold; transition: transform 0.2s;">📤 Telegram Sync</a>
-    <a href="#excel-reports" style="padding: 15px; background: white; border-radius: 12px; text-align: center; box-shadow: 0 3px 6px rgba(0,0,0,0.05); text-decoration: none; color: #3c4043; font-weight: bold; transition: transform 0.2s;">📊 Excel Reports</a>
-    <a href="#http-repeater" style="padding: 15px; background: white; border-radius: 12px; text-align: center; box-shadow: 0 3px 6px rgba(0,0,0,0.05); text-decoration: none; color: #3c4043; font-weight: bold; transition: transform 0.2s;">🛠️ HTTP Repeater</a>
-    <a href="#visual-tour" style="padding: 15px; background: white; border-radius: 12px; text-align: center; box-shadow: 0 3px 6px rgba(0,0,0,0.05); text-decoration: none; color: #3c4043; font-weight: bold; transition: transform 0.2s;">🖼️ Visual Tour</a>
-    <a href="#license" style="padding: 15px; background: white; border-radius: 12px; text-align: center; box-shadow: 0 3px 6px rgba(0,0,0,0.05); text-decoration: none; color: #3c4043; font-weight: bold; transition: transform 0.2s;">📜 License</a>
-  </div>
+  <img src="https://img.shields.io/badge/Language-English-blue?style=flat-square" alt="English">
+  <a href="locales/README.en.md">English Version</a> |
+  <img src="https://img.shields.io/badge/Language-Arabic-green?style=flat-square" alt="Arabic">
+  <a href="#">النسخة العربية</a>
 </div>
 
 ---
 
-<h2 id="key-features" style="border-left: 5px solid #1a73e8; padding-left: 15px; color: #1a73e8;">✨ Key Features</h2>
-<a href="#table-of-contents" style="float: right; padding: 5px 15px; background: #e8f0fe; color: #1a73e8; border-radius: 20px; text-decoration: none; font-size: 0.9rem;">🔝 Top</a>
+## 📖 **نظرة عامة**
+> _يهدف هذا المشروع إلى تبسيط عملية تتبع تقدم الألعاب من خلال واجهة مستخدم عصرية وأدوات تحليل قوية. يدعم التطبيق إدارة آلاف الحسابات مع ميزات الأتمتة المتقدمة والمزامنة عبر تيليجرام لضمان أعلى مستويات الكفاءة والأمان._
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 25px 0;">
-  <div style="padding: 20px; background: #fff; border-left: 4px solid #4285f4; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 8px;">
-    <h3>📅 Smart Task Management</h3>
-    Automatic daily task distribution based on grouping algorithms to ensure balanced coverage of all account progression.
-  </div>
-  <div style="padding: 20px; background: #fff; border-left: 4px solid #34a853; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 8px;">
-    <h3>🔗 Burp Suite Simulator</h3>
-    An integrated <b>Repeater</b> tool that allows you to manually edit and resend HTTP requests to analyze server responses.
-  </div>
-  <div style="padding: 20px; background: #fff; border-left: 4px solid #fbbc05; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 8px;">
-    <h3>🌐 Intelligent Proxy</h3>
-    Full support for HTTP/SOCKS5 proxies with automatic expiry detection and automated Telegram notifications.
-  </div>
-  <div style="padding: 20px; background: #fff; border-left: 4px solid #ea4335; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 8px;">
-    <h3>🚀 Premium UI</h3>
-    State-of-the-art design supporting Arabic and English with dynamic themes (Dark/Light) and full mobile responsiveness.
-  </div>
+---
+
+## 📋 **قائمة المحتويات**
+1. [✨ المميزات الرئيسية](#-المميزات-الرئيسية)
+2. [💻 التقنيات المستخدمة](#-التقنيات-المستخدمة)
+3. [🚀 ابدأ الآن](#-ابدأ-الآن)
+4. [📤 المزامنة والأتمتة (تيليجرام)](#-المزامنة-والأتمتة-تيليجرام)
+5. [📊 تقارير Excel المتقدمة](#-تقارير-excel-المتقدمة)
+6. [🛠️ مكرر الطلبات HTTP](#-مكرر-الطلبات-http)
+7. [📁 هيكلية المشروع](#-هيكلية-المشروع)
+8. [🖼️ جولة بصرية](#-جولة-بصرية)
+9. [📜 التراخيص](#-التراخيص)
+
+---
+
+## ✨ **المميزات الرئيسية**
+- **📅 إدارة المهام الذكية**: توزيع تلقائي للمهام اليومية بناءً على خوارزميات التجميع لضمان تغطية الحسابات.
+- **🔗 محاكي Burp Suite**: أداة Repeater مدمجة لتعديل وإعادة إرسال طلبات الـ HTTP يدوياً وسهولة التحليل.
+- **🌐 نظام بروكسي ذكي**: دعم كامل لـ HTTP/Socks5 مع ميزات الكشف التلقائي عن الصلاحية.
+- **🚀 واجهة عصرية Premium**: تصميم يدعم الثيمات المتعددة واللغتين العربية والإنجليزية مع استجابة كاملة.
+
+<div align="center">
+  <a href="#-قائمة-المحتويات">🔝 العودة للأعلى</a>
 </div>
 
 ---
 
-<h2 id="tech-stack" style="border-left: 5px solid #34a853; padding-left: 15px; color: #34a853;">💻 Tech Stack</h2>
-<a href="#table-of-contents" style="float: right; padding: 5px 15px; background: #e6f4ea; color: #34a853; border-radius: 20px; text-decoration: none; font-size: 0.9rem;">🔝 Top</a>
+## 💻 **التقنيات المستخدمة**
+- **Tauri 2.0**: لبناء نواة التطبيق المكتبي باستخدام لغة Rust.
+- **React & TypeScript**: لتطوير واجهة المستخدم العصرية والتفاعلية.
+- **Rust Engine**: لمعالجة المهام الثقيلة وإدارة قاعدة البيانات بأداء عالٍ.
+- **pnpm Workspaces**: لإدارة حزم المشروع الموحد (Monorepo) بكفاءة.
 
-<div align="center" style="margin: 30px 0;">
-  <table style="width: 100%; border-collapse: separate; border-spacing: 10px;">
-    <tr>
-      <td align="center" style="padding: 20px; background: #f8f9fa; border-radius: 12px; width: 25%;">
-        <img src="https://raw.githubusercontent.com/tauri-apps/tauri/HEAD/app-icon.png" width="50" alt="Tauri"><br>
-        <strong>Tauri 2.0</strong><br><small>Rust Desktop Core</small>
-      </td>
-      <td align="center" style="padding: 20px; background: #f8f9fa; border-radius: 12px; width: 25%;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" width="50" alt="React"><br>
-        <strong>React</strong><br><small>UI Layer</small>
-      </td>
-      <td align="center" style="padding: 20px; background: #f8f9fa; border-radius: 12px; width: 25%;">
-        <img src="https://www.rust-lang.org/static/images/rust-logo-blk.svg" width="50" alt="Rust"><br>
-        <strong>Rust</strong><br><small>Heavy Engine</small>
-      </td>
-      <td align="center" style="padding: 20px; background: #f8f9fa; border-radius: 12px; width: 25%;">
-        <img src="https://pnpm.io/img/pnpm-no-name-with-frame.svg" width="50" alt="pnpm"><br>
-        <strong>pnpm</strong><br><small>Fast Workspaces</small>
-      </td>
-    </tr>
-  </table>
+<div align="center">
+  <a href="#-قائمة-المحتويات">🔝 العودة للأعلى</a>
 </div>
 
 ---
 
-<h2 id="getting-started" style="border-left: 5px solid #fbbc05; padding-left: 15px; color: #fbbc05;">🚀 Getting Started</h2>
-<a href="#table-of-contents" style="float: right; padding: 5px 15px; background: #fef7e0; color: #fbbc05; border-radius: 20px; text-decoration: none; font-size: 0.9rem;">🔝 Top</a>
+## 🚀 **ابدأ الآن**
 
-### Prerequisites
-<div style="background: #fdf7e3; padding: 15px; border-radius: 10px; border-left: 4px solid #fbbc05;">
-  ✅ <b>Node.js (v18+)</b> - JavaScript runtime environment.<br>
-  ✅ <b>Rust (Stable)</b> - For building the powerful application core.<br>
-  ✅ <b>pnpm</b> - For managing the Monorepo package structure.
-</div>
+### المتطلبات الأساسية
+- [x] **Node.js (v18+)**
+- [x] **Rust (Stable)**
+- [x] **pnpm** (مثبت عالمياً)
 
-### Installation Steps
-```bash
-# 1. Clone the repository
-git clone https://github.com/Ahmad-J-Bary/game-request-generator.git
+### خطوات التثبيت
+1. استنساخ المستودع:
+   ```bash
+   git clone https://github.com/Ahmad-J-Bary/game-request-generator.git
+   cd game-request-generator
+   ```
 
-# 2. Navigate and Install dependencies
-cd game-request-generator
-pnpm install
+2. تثبيت الحزم:
+   ```bash
+   pnpm install
+   ```
 
-# 3. Start Development Mode
-pnpm dev
-```
+3. تشغيل التطبيق في وضع التطوير:
+   ```bash
+   pnpm start
+   ```
 
----
-
-<h2 id="telegram-sync" style="border-left: 5px solid #0088cc; padding-left: 15px; color: #0088cc;">📤 Telegram Sync & Automation</h2>
-<a href="#table-of-contents" style="float: right; padding: 5px 15px; background: #e6f3ff; color: #0088cc; border-radius: 20px; text-decoration: none; font-size: 0.9rem;">🔝 Top</a>
-
-The application provides deep integration with Telegram to ensure workflow continuity and data safety:
-- **Cloud Backup**: Easily upload and download your entire database (`database.sqlite`) with a single click.
-- **Completion Reports**: Automatically send generated Excel reports to designated Telegram groups after daily tasks.
-- **Status Monitoring**: Receive instant notifications for task completions or connection issues.
-
----
-
-<h2 id="excel-reports" style="border-left: 5px solid #1d6f42; padding-left: 15px; color: #1d6f42;">📊 Advanced Excel Reports</h2>
-<a href="#table-of-contents" style="float: right; padding: 5px 15px; background: #e9f5ee; color: #1d6f42; border-radius: 20px; text-decoration: none; font-size: 0.9rem;">🔝 Top</a>
-
-A flexible reporting system designed for precise game progression tracking:
-- **Multiple Layouts**: Full support for both Vertical and Horizontal export formats to suit different analysis needs.
-- **Data Filtering**: Ability to exclude technical metadata sheets (`*_Lvl`, `*_Evt`) for clean, concise sharing.
-- **Smart Formatting**: Reports are pre-styled and color-coded, ready for immediate review without extra manual work.
-
----
-
-<h2 id="http-repeater" style="border-left: 5px solid #ff6600; padding-left: 15px; color: #ff6600;">🛠️ HTTP Repeater (Pro Toolbox)</h2>
-<a href="#table-of-contents" style="float: right; padding: 5px 15px; background: #fff0e6; color: #ff6600; border-radius: 20px; text-decoration: none; font-size: 0.9rem;">🔝 Top</a>
-
-A professional tool for interacting with raw HTTP requests, mirroring the Burp Suite environment:
-- **Manual Control**: Edit headers and payloads precisely and analyze server responses in real-time.
-- **Protocol Support**: Fully compatible with both `HTTP/1.1` and `HTTP/2`.
-- **Proxy Aware**: All requests sent through the Repeater automatically respect your global proxy configuration.
-
----
-
-<h2 id="visual-tour" style="border-left: 5px solid #ea4335; padding-left: 15px; color: #ea4335;">🖼️ Visual Tour</h2>
-<a href="#table-of-contents" style="float: right; padding: 5px 15px; background: #fce8e6; color: #ea4335; border-radius: 20px; text-decoration: none; font-size: 0.9rem;">🔝 Top</a>
-
-<div align="center" style="margin: 30px 0; padding: 40px; border: 2px dashed #ea4335; border-radius: 15px;">
-  <p style="color: #ea4335; font-size: 1.2rem;">📸 Coming Soon: High-resolution screenshots and videos of the Dashboard and HTTP Repeater.</p>
-  <img src="https://via.placeholder.com/800x450/fce8e6/ea4335?text=Dashboard+Preview" width="100%" alt="Placeholder">
+<div align="center">
+  <a href="#-قائمة-المحتويات">🔝 العودة للأعلى</a>
 </div>
 
 ---
 
-<h2 id="license" style="border-left: 5px solid #7b1fa2; padding-left: 15px; color: #7b1fa2;">📜 License</h2>
-<a href="#table-of-contents" style="float: right; padding: 5px 15px; background: #f3e5f5; color: #7b1fa2; border-radius: 20px; text-decoration: none; font-size: 0.9rem;">🔝 Top</a>
+## 📤 **المزامنة والأتمتة (تيليجرام)**
+- **النسخ الاحتياطي السحابي**: رفع وتحميل نسخة كاملة من قاعدة البيانات بضغطة زر واحدة.
+- **تقارير الإنجاز**: إرسال ملفات الـ Excel تلقائياً إلى مجموعات تيليجرام المحددة.
+- **التنبيهات**: استلام إشعارات فورية عند انتهاء المهام أو وجود مشاكل في البروكسي.
 
-<div align="center" style="margin: 20px 0;">
-  <img src="https://img.shields.io/badge/Developed%20with-%E2%9D%A4-red" alt="Heart Badge">
+<div align="center">
+  <a href="#-قائمة-المحتويات">🔝 العودة للأعلى</a>
 </div>
-  <p style="font-size: 1.1rem; color: #5f6368;">Developed with ❤️ by <a href="https://github.com/Ahmad-J-Bary" target="_blank" style="font-weight: bold; color: #1a73e8; text-decoration: none;">Ahmad Abdelbary @Ahmad-J-Bary</a></p>
-  <div style="margin-top: 20px;">
-    <a href="https://github.com/Ahmad-J-Bary" style="text-decoration: none; margin: 0 10px;">🐙 GitHub</a>
-    <a href="#" style="text-decoration: none; margin: 0 10px;">📧 Contact</a>
-    <a href="#" style="text-decoration: none; margin: 0 10px;">🌍 Portfolio</a>
-  </div>
+
+---
+
+## 📊 **تقارير Excel المتقدمة**
+- **تنسيقات مرنة**: دعم التصدير الرأسي (Vertical) والأفقي (Horizontal).
+- **الفلترة الذكية**: إمكانية استبعاد ملفات المعلومات (`*_Lvl`, `*_Evt`) لتقارير أسرع وأوضح.
+- **ثيمات التقارير**: التقارير تأتي منسقة وجاهزة للقراءة المباشرة دون الحاجة لتعديل.
+
+<div align="center">
+  <a href="#-قائمة-المحتويات">🔝 العودة للأعلى</a>
 </div>
+
+---
+
+## 🛠️ **مكرر الطلبات HTTP (Repeater)**
+- **تحكم كامل**: تحرير الترويسات (Headers) والحمولات (Payloads) بدقة واحترافية.
+- **دعم البروتوكولات**: توافقية كاملة مع HTTP/1.1 و HTTP/2.
+- **الارتباط بالبروكسي**: احترام إعدادات البروكسي العامة للتطبيق في كافة الطلبات المرسلة.
+
+<div align="center">
+  <a href="#-قائمة-المحتويات">🔝 العودة للأعلى</a>
+</div>
+
+---
+
+## 📁 **هيكلية المشروع**
+ ```bash
+ game-request-generator/
+ ├── apps/
+ │   └── desktop-mobile/       # تطبيق Tauri + React
+ ├── packages/
+ │   ├── grq-ui/               # مكتبة المكونات
+ │   ├── grq-core/             # منطق العمل والخدمات
+ │   └── grq-api-bindings/     # أنواع البيانات المنقولة
+ ├── crates/
+ │   └── grq-engine/           # محرك Rust وقاعدة البيانات
+ └── locales/                  # ملفات الترجمة والتوثيق
+ ```
+
+<div align="center">
+  <a href="#-قائمة-المحتويات">🔝 العودة للأعلى</a>
+</div>
+
+---
+
+## 🖼️ **جولة بصرية**
+![Dashboard Preview](https://via.placeholder.com/800x450?text=Dashboard+Preview)
+_سيتم استبدال هذه الصورة بلقطات شاشة حقيقية للتطبيق قريباً._
+
+<div align="center">
+  <a href="#-قائمة-المحتويات">🔝 العودة للأعلى</a>
+</div>
+
+---
+
+## 📜 **التراخيص**
+هذا المشروع مرخص بموجب رخصة MIT. راجع ملف `LICENSE` لمزيد من المعلومات.
+
+<div align="center">
+  <a href="#-قائمة-المحتويات">🔝 العودة للأعلى</a>
+</div>
+
+<p align="center"> تم التطوير بكل ❤️ بواسطة <a href="https://github.com/Ahmad-J-Bary">@Ahmad Abdelbary</a> </p>
+****
